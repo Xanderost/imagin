@@ -10,7 +10,7 @@ public class Projet {
 
     // Relation OTM vers Affectation
     private ArrayList<Affectation> affectations = new ArrayList<>();
-
+    private ArrayList<Intervenant> intervenantResponsables = new ArrayList<>();
     public Projet() {
     }
 
@@ -52,5 +52,13 @@ public class Projet {
 
     public void setBudgetPrevu(int budgetPrevu) {
         this.budgetPrevu = budgetPrevu;
+    }
+
+    public ArrayList<Intervenant> getIntervenantResponsables() {
+        return intervenantResponsables;
+    }
+
+    public void setIntervenantResponsables(ArrayList<Intervenant> intervenantResponsables) {
+        this.intervenantResponsables = intervenantResponsables;
     }
 }

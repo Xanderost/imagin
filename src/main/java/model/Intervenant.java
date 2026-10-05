@@ -9,6 +9,7 @@ public class Intervenant {
     private String nom;
 
     private ArrayList<Affectation> affectations = new ArrayList<>();
+    private ArrayList<Intervenant> IntervenantResponsable = new ArrayList<>();
 
     public Intervenant() {
     }
@@ -49,5 +50,13 @@ public class Intervenant {
 
     public void setNom(String nom) {
         this.nom = nom;
+    }
+
+    public ArrayList<Intervenant> getIntervenantResponsable() {
+        return IntervenantResponsable;
+    }
+
+    public void setIntervenantResponsable(ArrayList<Intervenant> intervenantResponsable) {
+        IntervenantResponsable = intervenantResponsable;
     }
 }
